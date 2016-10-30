@@ -5,6 +5,16 @@ import scala.io.Source
 
 class Assignment {
 
+	// Name: 
+	// Student Number: 100******
+
+	// ========= PLACE YOUR OWN ADDITIONAL FUNCTIONS HERE ==========
+
+
+
+	// ========= END ADDITIONAL FUNCTIONS===========================
+
+
 	/**
 	* This is a warm-up! Simply read the contents of the file associated to the argument 
 	* 'filename' and print the contents to the console.
@@ -42,12 +52,14 @@ class Assignment {
 
 	/**
 	* This time you are going to write to a file. All of these keys are optional. 
-	* The ones that are set will be used as filters on the data. You need to output 
+	* The ones that have values set will be used as filters on the data. You need to output 
 	* the day, start time, end time, code, title and location, with each record on 
 	* its own line.
 	*/
 	def printSchedule(file_name: String, args: Map[String, String]) {
 		println("printSchedule - " + file_name + " - " + args.toString)
+
+		// reminder: the file you print to must be 'schedule.txt'
 
 		// YOUR CODE GOES HERE
 
@@ -56,10 +68,10 @@ class Assignment {
 
 	/**
 	* For this one, you need to find all the times that rooms are free, filter the 
-	* data based on the :keys and output results to the console. Example: If I 
-	* provide the keys :weekday and :time then I want a print out of the weekday, 
-	* time and room (e.g. R - 8:10 to 11:40 - University Building A1 UA2240) for 
-	* every segment that matches the :weekday and :time.
+	* data based on the keys to the args map that have values and output results to the console. 
+	* Example: If I provide the keys "weekday"="R" and "time"="11:10" then I want a print out of 
+	* the weekday, time and room (e.g. R - 8:10 to 11:40 - University Building A1 UA2240) for 
+	* every segment that matches the weekday and time.
 	*/
 	def freeRoom(file_name: String, args: Map[String, String]) {
 		println("freeRoom - " + file_name + " - " + args.toString)
@@ -71,6 +83,9 @@ class Assignment {
 }
 
 
+/**
+* Don't touch this!!!
+*/
 object Main {
 	def main(args: Array[String]): Unit = {
 
