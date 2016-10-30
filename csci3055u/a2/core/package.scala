@@ -80,9 +80,13 @@ object Main {
   	
 		if (args.length > 2) {
 			val params_xml = XML.loadFile(args(2))
-			val params = (for{x <- params_xml \ "param"} yield (x \ "@name", x)).toMap
-			val method = a.getClass.getMethod(fun_name, file_name.getClass, params.getClass)
-			method.invoke(a, file_name, params)
+			val params: Map[String, String] = (params_xml \ "param").map { x => ((x \ "@name").text -> x.text) }.toMap
+
+			//boo can't get reflection to work with the Map parameter
+			if (fun_name == "printSchedule")
+				a.printSchedule(file_name, params)
+			else
+				a.freeRoom(file_name, params)
 		} else {
 			val method = a.getClass.getMethod(fun_name, file_name.getClass)
 			method.invoke(a, file_name)
