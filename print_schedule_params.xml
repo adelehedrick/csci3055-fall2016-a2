@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<param name="code">CSCI 3055U</param>
+	<param name="title"></param> 
+	<param name="room"></param> 
+	<param name="weekday"></param> 
+	<param name="time"></param>
+</params>

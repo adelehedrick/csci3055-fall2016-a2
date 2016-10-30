@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<param name="room"></param> 
+	<param name="weekday">R</param> 
+	<param name="time"></param>
+</params>
