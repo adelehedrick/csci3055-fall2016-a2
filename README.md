@@ -23,10 +23,10 @@ The character used to separate the columns is the vertical bar `"\|"`.
 
 Near the top of the *csci3055u/a2/core/project.scala* file make sure you put your name and student number in the comments provided:
 
-{{< highlight scala >}}
+```scala
 // Name: 
 // Student Number: 100******
-{{</highlight>}}
+```
 
 ## Step 2. Fill in Functions Provided
 
