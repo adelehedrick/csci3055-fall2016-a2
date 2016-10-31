@@ -154,7 +154,7 @@ R 12:30-14:10 - University Building A1 UA2240
 R 17:0-18:40 - University Building A1 UA2240
 ```
 
-With my `free_rooms_params.xml` with all params set:
+Example `free_rooms_params.xml` with all params set:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <params>
