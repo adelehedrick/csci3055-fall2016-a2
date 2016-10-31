@@ -113,6 +113,18 @@ T 12:40-14:0 - CSCI 3055U - Programming Languages - University Building A1 UA224
 R 11:10-12:30 - CSCI 3055U - Programming Languages - University Building A1 UA2240
 ```
 
+Example `print_schedule_params.xml` with all params set:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<param name="code">CSCI 3055U</param>
+    <param name="title">Programming Languages</param> 
+    <param name="room">University Building A1 UA2240</param> 
+    <param name="weekday">R</param> 
+    <param name="time">11:10</param>
+</params>
+```
+
 ### free-room 
 
 For this one, you need to find all the times that rooms are free, filter the data based on the keys to the args map that have values and output results to the console. 
@@ -127,7 +139,7 @@ With my `free_rooms_params.xml` settings as:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <params>
-	<param name="room"></param> 
+	<param name="room">University Building A1 UA2240</param> 
 	<param name="weekday">R</param> 
 	<param name="time"></param>
 </params>
@@ -136,12 +148,21 @@ With my `free_rooms_params.xml` settings as:
 Terminal:
 ```bash
 make freeRoom
-freeRoom - csci3055u-a2.txt - Map(room -> , weekday -> R, time -> )
+freeRoom - csci3055u-a2.txt - Map(room -> University Building A1 UA2240, weekday -> R, time -> )
 R 11:0-11:10 - University Building A1 UA2240
 R 12:30-14:10 - University Building A1 UA2240
 R 17:0-18:40 - University Building A1 UA2240
 ```
 
+With my `free_rooms_params.xml` with all params set:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<params>
+	<param name="room">University Building A1 UA2240</param> 
+	<param name="weekday">R</param> 
+	<param name="time">11:10</param>
+</params>
+``` 
 
 ## Some Helpful Resources 
 
